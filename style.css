@@ -1,0 +1,35 @@
+.accordion{
+    width: 50%;
+}
+.accordion_item{
+    margin-bottom: 10px;
+    position: relative;
+}
+.accordion_title{
+    background: tomato;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.accordion_title:after{
+    content: '\002B';
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.accordion_title:hover{
+    background-color: #d2432a;
+}
+.accordion_content{
+    background-color: #f5f5dc;
+    padding: 10px 20px;
+    display: none;
+}
+.accordion_content.active{
+    display: block;
+}
+.accordion_title.active:after{
+    content: "\2212";
+}
